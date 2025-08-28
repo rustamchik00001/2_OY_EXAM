@@ -18,12 +18,20 @@ h1{
   }
 }
 
+.tools{
+  padding-bottom: 80px;
+}
+
 .box{
   display: flex;
   align-items: center; 
-  background-image: url("./img/background.svg");
+  background-color: antiquewhite;
+  // ustoz menda background image ishlmadi qilib kordim qila olmadim vashe kop harakat qildim
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
   border-radius: 8px;
-  padding: 0 10px ;
+  padding: 0 10px;
   .mini_box{
     background-color: #fff;
     padding: 10px;

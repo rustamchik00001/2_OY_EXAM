@@ -1,0 +1,58 @@
+.parent2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+h1{
+  margin: 40px 0;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 138%;
+  text-transform: uppercase;
+  color: #000;
+  span{
+    font-weight: 700;
+  }
+}
+
+.complex{
+  padding-bottom: 80px;
+}
+
+.wrap{
+  display: flex;
+  background-color: antiquewhite;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 0 10px ;
+  .mini_wrap{
+    align-items: start;
+    height: 70px;
+    align-items: center;
+    background: #fead04;
+    padding: 10px;
+    // ustoz bunda togrisi qandey qilib figmadaka joylashtirish chunmadim
+    p{  
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 102%;
+      color: #fff;
+    }
+  }
+  &:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+
+
+
+
+
