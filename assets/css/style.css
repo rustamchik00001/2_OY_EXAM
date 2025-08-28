@@ -1,15 +1,235 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap");
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Fugaz One", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
-:root {
-  --font-family: "Gotham Pro", sans-serif;
-  --second-family: "Roboto", sans-serif;
-  --third-family: "Fugaz One", sans-serif;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a, button, select {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_left img {
+  width: 250px;
+  height: 100px;
+}
+
+.header_center ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.header_center li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+.header_center .header_center_bottom {
+  margin-top: 5px;
+  border-top: 1px solid #ddd;
+  padding-top: 5px;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header_right .lang select {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  width: 67px;
+  height: 50px;
+  padding-left: 10px;
+  font-weight: 900;
+  font-size: 16px;
+  color: #000;
+}
+.header_right .phone a {
+  font-weight: 900;
+  font-size: 16px;
+  color: #000;
+}
+.header_right .phone p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+}
+
+.hero {
+  padding: 40px 0;
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  position: relative;
+}
+.hero_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+.hero_left .hero_title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #fead04;
+}
+.hero_left .border {
+  border: 1px solid #000;
+  width: 446px;
+  height: 0px;
+}
+.hero_left .hero_subtitle {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 115%;
+  color: #000;
+}
+.hero_left .hero_btn {
+  background: #fead04;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 3px;
+  width: fit-content;
+  transition: 0.3s;
+  font-weight: 600;
+  line-height: 138%;
+  text-align: center;
+}
+.hero_left .hero_btn:hover {
+  background: #d48f00;
+}
+.hero_right .hero_img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.hero_socials {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: -90px;
+}
+.hero_socials p {
+  font-weight: 900;
+  font-size: 20px;
+  color: #000;
+  transform: rotate(-90deg);
+  margin-bottom: 50px;
+}
+.hero_socials .border {
+  border: 1px solid #000;
+  width: 60px;
+  height: 0px;
+  transform: rotate(-90deg);
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.hero_socials .fa-brands {
+  margin-left: 30px;
+  color: #fead04;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+h1 {
+  margin: 40px 0;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 138%;
+  text-transform: uppercase;
+  color: #000;
+}
+h1 span {
+  font-weight: 700;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-image: url("./img/background.svg");
+  border-radius: 8px;
+  padding: 0 10px;
+}
+.box .mini_box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.box .mini_box p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 138%;
+  color: #000;
+}
+.box .tools_img {
+  width: 160px;
+  height: 200px;
+}
+.box:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,14 +3,149 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XOLIS</title>
+    <title>OLIS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="container">
+        <nav class="header_left">
+          <a href=""><img src="./img/logo.svg" alt="Logo"></a>
+        </nav>
+    
+        <nav class="header_center">
+          <ul>
+            <li><a href="#">О компании ▾</a></li>
+            <li><a href="#">Объекты ▾</a></li>
+            <li><a href="#">Пресс-центр ▾</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Контакты ▾</a></li>
+          </ul>
+          <ul class="header_center_bottom">
+            <li><a href="#">Комплексные решения ▾</a></li>
+            <li><a href="#">Наше оборудование ▾</a></li>
+            <li><a href="#">Оснащение лабораторий ▾</a></li>
+            <li><a href="#">Услуги компании</a></li>
+          </ul>
+        </nav>
+      
+        <nav class="header_right">
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.7093 1.08594C15.7394 1.08604 19.8353 5.17729 19.8353 10.2119C19.8352 12.4494 19.023 14.4931 17.6868 16.0811L23.1859 21.5752L23.2405 21.6348C23.4926 21.9434 23.4739 22.3965 23.1859 22.6846C23.0326 22.8377 22.8329 22.915 22.6292 22.915C22.4255 22.915 22.2258 22.8378 22.0726 22.6846L16.5784 17.1904C14.9902 18.5264 12.9423 19.3378 10.7093 19.3379C5.6792 19.3379 1.58342 15.2465 1.58331 10.2119C1.58331 5.17723 5.67913 1.08594 10.7093 1.08594ZM10.7093 2.65625C6.54488 2.65625 3.15363 6.0475 3.15363 10.2119C3.15373 14.3762 6.54494 17.7676 10.7093 17.7676C14.8736 17.7675 18.2648 14.3762 18.265 10.2119C18.265 6.04329 14.8737 2.65635 10.7093 2.65625Z" fill="black" stroke="black" stroke-width="0.5" />
+            </svg>
+          </a>
+      
+          <div class="lang">
+            <select>
+              <option>RU</option>
+              <option>EN</option>
+              <option>UZ</option>
+            </select>
+          </div>
 
+          <div class="phone">
+            <p>Наши номера</p>
+            <span>
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1174 7.22024C9.4439 7.22024 8.78264 7.11491 8.15601 6.90783C7.84896 6.8031 7.47149 6.89918 7.28409 7.09165L6.04725 8.02533C4.61287 7.25966 3.72931 6.37639 2.9741 4.95278L3.88031 3.74816C4.11575 3.51304 4.2002 3.16958 4.09902 2.84731C3.89105 2.21739 3.7854 1.55644 3.7854 0.882693C3.78543 0.395971 3.38946 0 2.90277 0H0.882664C0.395971 0 0 0.395971 0 0.882664C0 6.46144 4.53859 11 10.1174 11C10.6041 11 11 10.604 11 10.1173V8.10288C11 7.61621 10.604 7.22024 10.1174 7.22024Z" fill="#FEAD04" />
+              </svg>
+            </span>
+            <a href="tel:+380678228558">+38 (067) 822-85-58</a>
+          </div>
+        </nav>
       </div>
     </header>
+    
+    <main>
+      <section class="hero">
+        <div class="container">
+          
+          <div class="hero_socials">
+            <p>Соцсети</p>
+            <div class="border"></div>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            
+            
+          </div>
+
+          <div class="hero_left">
+            <h2 class="hero_title">ТЕХНОЛОГИИ И ОБОРУДОВАНИЕ</h2>
+            <div class="border"></div>
+            <p class="hero_subtitle">
+              для очистки, переработки и контроля качества зерна
+            </p>
+            <button class="hero_btn">Оставить заявку</button>
+          </div>
+
+          <div class="hero_right">
+            <img src="./img/hero.png" class="hero_img">
+          </div>
+        </div>
+      </section>
+      
+      <section class="tools">
+        <div class="container">
+          <h1><span>Н</span>аше оборудование</h1>
+          <div class="parent">
+            <div class="div1 box">
+              <div class="mini_box">
+                <img src="./assets/sass/home/img/tools1.svg" alt="">
+                <p>Зерноочистительное оборудование</p>
+              </div>
+              <img class="tools_img" src="./assets/sass/home/img/tools1.png" alt="">
+            </div>
+            <div class="div2 box">
+              <div class="mini_box">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <img class="tools_img" src="" alt="">
+            </div>
+            <div class="div3 box">
+              <div class="mini_box">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <img class="tools_img" src="" alt="">
+            </div>
+            <div class="div4 box">
+              <div class="mini_box">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <img class="tools_img" src="" alt="">
+            </div>
+            <div class="div5 box">
+              <div class="mini_box">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <img class="tools_img" src="" alt="">
+            </div>
+            <div class="div6 box">
+              <div class="mini_box">
+                <img src="" alt="">
+                <p></p>
+              </div>
+              <img class="tools_img" src="" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+      </div>
+    </footer>
   </body>
 </html>
